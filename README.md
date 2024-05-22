@@ -18,3 +18,5 @@ my_flask_app/<br>
 To run this app successfully, follow the below-mentioned steps <br>
 1: pip install Flask Flask-SQLAlchemy Flask-Migrate Flask-WTF Flask-Uploads <br>
 2: python app.py
+========================================================================================== <br>
+To view the app code kindly change the branch from "main" to "master" 

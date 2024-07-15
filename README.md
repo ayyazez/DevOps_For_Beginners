@@ -3,15 +3,15 @@ Images are uploaded to a directory, and the product list and forms are managed u
 
 # Application Structure 
 
-my_flask_app/
-├── app.py
-├── templates/
-│   ├── base.html
-│   ├── index.html
-│   ├── product_list.html
-│   ├── product_form.html
-└── static/
-    └── uploads/
+my_flask_app/<br>
+├── app.py<br>
+├── templates/ <br>
+│   ├── base.html <br>
+│   ├── index.html<br>
+│   ├── product_list.html <br>
+│   ├── product_form.html <br>
+└── static/ <br>
+    └── uploads/ <br>
     
 ==========================================================================================
 To run this app successfully, follow the below-mentioned steps

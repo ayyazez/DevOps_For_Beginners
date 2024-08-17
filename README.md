@@ -1,6 +1,6 @@
 This app demonstrates a basic CRUD application using Flask. Products are stored in a list and can be added, edited, and deleted. 
 Images are uploaded to a directory, and the product list and forms are managed using Flask-WTF and WTForms. 
-# This is test line and a comment
+This is a test line and a comment
 
 # Application Structure 
 

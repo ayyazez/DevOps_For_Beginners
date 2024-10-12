@@ -18,3 +18,5 @@ my_flask_app/<br>
 To run this app successfully, follow the below-mentioned steps
 1: pip install Flask Flask-SQLAlchemy Flask-Migrate Flask-WTF Flask-Uploads
 2: python app.py
+#// test changes init
+This is for testing

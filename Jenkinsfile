@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        DOCKER_IMAGE = 'akhan101/hello_docker'
-    }
     stages {
         stage('Build') {
             steps {

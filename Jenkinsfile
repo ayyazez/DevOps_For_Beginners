@@ -1,15 +1,12 @@
 pipeline {
     agent any
-      options {
-        debug true
-    }
     environment {
-        DOCKER_IMAGE = 'akhan101/hello_docker'  // Define default Docker image name
+        DOCKER_IMAGE = 'akhan101/hello_docker'
     }
     stages {
         stage('Build') {
             steps {
-                echo "-------- Build Success ------ "
+                echo "-------- Build Success ------"
             }
         }
         stage('Test') {
@@ -20,25 +17,25 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} .'  // Docker build command
+                    sh 'docker build -t ${DOCKER_IMAGE}:${env.BUILD_NUMBER} .'
                 }
             }
         }
         stage('Push Docker Image') {
-           steps {
-               script {
-                   withCredentials([usernamePassword(credentialsId: 'akhan101', 
-                                                    usernameVariable: 'akhan101', 
-                                                    passwordVariable: 'Ik@124421')]) {
-                       sh '''
-                           echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                           docker push ${DOCKER_IMAGE}:${env.BUILD_NUMBER}
-                           docker logout
-                       '''
-                   }
-               }
-           }
-       }
+            steps {
+                script {
+                    withCredentials([usernamePassword(credentialsId: 'akhan101',
+                                                     usernameVariable: 'akhan101',
+                                                     passwordVariable: 'Ik@124421')]) {
+                        sh '''
+                            echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
+                            docker push ${DOCKER_IMAGE}:${env.BUILD_NUMBER}
+                            docker logout
+                        '''
+                    }
+                }
+            }
+        }
     }
     post {
         always {

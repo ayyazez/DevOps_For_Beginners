@@ -2,8 +2,8 @@ pipeline {
   
   agent any
    environment {
-        DOCKER_HUB_CREDENTIALS='akhan101'
-        DOCKER_IMAGE = 'akhan101/hello_docker'
+        //DOCKER_HUB_CREDENTIALS='akhan101'
+        //DOCKER_IMAGE = 'akhan101/hello_docker'
             
     }
   stages {

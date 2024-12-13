@@ -7,7 +7,5 @@ node {
 	stage('Test') {
 		echo "Test"
 	}
-	stage('Build Docker Image') {
-		//docker build -t akhan101/hello_docker:$env.BUILD_TAG
-	}
+	
 }

@@ -1,5 +1,8 @@
 pipeline {
     agent any
+      options {
+        debug true
+    }
     environment {
         DOCKER_IMAGE = 'akhan101/hello_docker'  // Define default Docker image name
     }

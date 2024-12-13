@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo "---------- Test has been performed successfully -----------..."
+                echo "---------- Test has been performed successfully -  ----------..."
             }
         }
         stage('Build Docker Image') {

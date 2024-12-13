@@ -9,11 +9,17 @@ pipeline {
   stages {
 
     stage('Build'){
-      echo "-------- Build Success ------ "
+      steps{
+         echo "-------- Build Success ------ "
+      }
+     
       
     }
     stage('Test'){
-      echo "---------- Test has been performed successfully -----------"
+      setps{
+        echo "---------- Test has been performed successfully -----------"
+      }
+      
       
     }
     stage('Build Docker Image'){

@@ -12,7 +12,7 @@ pipeline {
       
     }
     stage('Test'){
-      setps{
+      steps{
         echo "---------- Test has been performed successfully -----------"
       }
       
